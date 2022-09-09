@@ -8,8 +8,21 @@ Voici la liste des exigences de départ :
 
 === 1 -- HelloWorld 
 
-Le programme doit afficher "Hello World!" quand on l'exécute sans paramètres. 
+Description::
+Le programme doit afficher "Hello World!" quand on l'exécute sans paramètre. 
+
+Issue::
+- https://github.com/IUT-Blagnac/tracabilite-template/issues/1
+
+Importance::
+Must
 
 === 2 -- Echo 
 
-Le programme doit afficher le paramètre quand on l'exécute avec un parapmètre. 
+Description::
+Le programme doit afficher le paramètre quand on l'exécute avec un paramètre. 
+
+Issue::
+
+Importance::
+Should
