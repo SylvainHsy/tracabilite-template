@@ -6,20 +6,10 @@
 
 Voici la liste des exigences de départ :
 
-[cols="1,1,4,2,1"]
-|===
-| Numéro | Acronyme | Texte | Importance | ...
+=== 1 -- HelloWorld 
 
-| 1 
-| HelloWorld 
-| Le programme doit afficher "Hello World!" quand on l'exécute sans paramètres. 
-| Must 
-| 
+Le programme doit afficher "Hello World!" quand on l'exécute sans paramètres. 
 
-| 2 
-| Echo 
-| Le programme doit afficher le paramètre quand on l'exécute avec un parapmètre. 
-| Should 
-| 
+=== 2 -- Echo 
 
-|===
+Le programme doit afficher le paramètre quand on l'exécute avec un parapmètre. 
