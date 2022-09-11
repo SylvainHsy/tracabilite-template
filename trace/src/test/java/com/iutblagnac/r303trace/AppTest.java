@@ -1,9 +1,8 @@
-package trace;
+package com.iutblagnac.r303trace;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-
 /**
  * Unit test for simple App.
  */
@@ -33,6 +32,6 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        assertEquals("Hello World!", App.hello());
     }
 }

@@ -26,3 +26,8 @@ Issue::
 
 Importance::
 Should
+
+
+== Steps
+
+mvn archetype:generate -DinteractiveMode=false
