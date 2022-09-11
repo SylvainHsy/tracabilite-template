@@ -28,10 +28,18 @@ public class AppTest
     }
 
     /**
-     * Rigourous Test :-)
+     * Test the return with empty parameter
      */
-    public void testApp()
+    public void testHelloEmptyParameter()
     {
         assertEquals("Hello World!", App.hello());
+    }
+
+    /**
+     * Test the return with a parameter
+     */
+    public void testHelloParameter()
+    {
+        assertEquals("Hello JMB!", App.hello("Hello JMB!"));
     }
 }
