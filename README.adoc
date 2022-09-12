@@ -1,6 +1,13 @@
 = Traçabilité exigences - code
+:icons: font
+:MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
 == Contexte
+
+Le but de ce TD/TP est de vous montrer des exemples de traces formelles entre les différents artefacts de votre application (des exigences jusqu'au code).
+
+.Les principaux artefacts qui nous intéressent en  R3-03 (Inspiré de https://github.com/xblanc33/QualiteDev/[ici])
+image::artifacts-r303.svg[width=120%,pdfwidth=60%,link="https://github.com/xblanc33/QualiteDev/"]
 
 == Exigences
 
@@ -27,7 +34,51 @@ Issue::
 Importance::
 Should
 
+[TIP]
+=====
+Nous utilisons ici la méthode {MoSCoW} d'estimation.
+=====
 
-== Steps
+== Étapes
 
+. Récupérez un dépôt via classroom  et clonez-le localement :  https://classroom.github.com/a/A6-Vf-xM
+. Créez une (ou plusieurs) issue correspondant à des développement, des tests ou  de la doc en lien avec une exigence.
++
+.Exemple d'issue
+image::issue.png[width=100%,pdfwidth=60%]
++
+. Liez-là à l'exigence (comme c'est fait ci-dessus)
+. Créez une branche dédiée
++
+.Une branche liée à une issue
+image::branch.png[width=100%,pdfwidth=60%]
++
+. Créez un projet `maven` dans votre dépôt, avec  le plugin de votre IDE, ou avec les commandes maven : 
++
+[source]
+-----
 mvn archetype:generate -DinteractiveMode=false
+-----
+. Réalisez les tests, puis le code, puis la javadoc du code dans cette branche
++
+.mvn test
+image::mvntest.png[width=100%,pdfwidth=60%]
++
+. Une fois que tout fonctionne, réalisez une merge request (nécessite que le code correct  soit poussé sur le dépôt distant)
++
+.Une branche liée à une issue
+image::mergerequest.png[width=100%,pdfwidth=60%]
++
+TIP: Notez, avant la dernière étape, comme vous pouvez "naviguer" de l'exigence au code ou vice-versa.
++
+.Bulle info sur l'origine du code
+image::traceback.png[width=100%,pdfwidth=60%]
++
+. Acceptez la merge request, détruisez la branche et fermez l'issue.
++
+.Accepter la merge request
+image::merge.png[width=100%,pdfwidth=60%]
+.Trace dans les commits
+image::tracebranches.png[width=60%,pdfwidth=60%]
++
+. Répétez l'opération pour une fonctionnalité de votre choix, un peu plus compliquée. Juste pour tester que cette  démarche est acquise.
